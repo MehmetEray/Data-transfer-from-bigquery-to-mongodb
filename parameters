@@ -1,0 +1,7 @@
+source_bucket_name: str,  # GCS bucket name
+source_bucket_prefix: str,  # GCS bucket extension
+mongo_conn_id: str,  # Mongo DB connection id that we want to insert/upsert into
+collection_name: str,  # Mongo DB collection name that we want to insert/upsert into
+db_name: str,  # Mongo DB database name
+filter_field=None,  # Column name for usage upsert. Default is False.
+upsert=False,  # For activate upsert parameter, we need to set True. Default is False.
